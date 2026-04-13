@@ -1,0 +1,53 @@
+AI Engineering by Chip Huyen - Chapter 1 Progress Summary
+
+Chapter 1: Introduction to Building AI Applications with Foundation Models
+
+Key concepts mastered:
+
+Section 1 - The Rise of AI Engineering
+		•	Language models are statistical completion machines operating on tokens
+		•	Masked LMs use bidirectional context for understanding tasks; Autoregressive LMs predict the next token for generation tasks
+		•	Self-supervision eliminated the data labeling bottleneck by extracting labels from input text itself - enabling scale
+		•	LLMs handle text only; Foundation Models handle multiple modalities and are general-purpose
+		•	Three factors drove AI Engineering's growth: general-purpose capabilities, increased investment, low barrier to entry
+
+Section 2 - Use Cases
+		•	Eight categories: Coding, Image/Video, Writing, Education, Conversational Bots, Information Aggregation, Data Organization, Workflow Automation
+		•	Four filters for strong AI use cases: pattern completion, high volume/repetition, error tolerance, personalization at scale
+		•	Enterprises deploy internal applications before external ones - lower risk, builds expertise, creates feedback loop
+		•	Agents differ from chatbots by their ability to use external tools and make decisions across multi-step tasks
+
+Section 3 - Planning AI Applications
+		•	First question before building: should you build this at all, or buy?
+		•	Three urgency levels: existential threat, competitive opportunity, FOMO
+		•	AI role dimensions: critical vs complementary, reactive vs proactive, dynamic vs static
+		•	Crawl-Walk-Run framework for increasing AI automation gradually
+		•	Last mile problem: 0→60 is easy, 60→100 takes most of the time and resources
+		•	Three competitive advantages: technology (commoditized), distribution (big companies win), data (realistic startup moat)
+
+Section 4 - The AI Engineering Stack
+		•	Three layers: Application Development (top), Model Development (middle), Infrastructure (bottom)
+		•	Application Development: Evaluation, Prompt Engineering, AI Interface
+		•	Model Development: Modeling/Training, Dataset Engineering, Inference Optimization
+		•	Pre-training: training model from scratch, randomly initialized weights, extremely compute intensive
+		•	Finetuning: continuing training on a previously trained model, less data and compute required
+		•	Post-training: conceptually same as finetuning - model developers post-train, application developers finetune
+		•	Prompt engineering is NOT training - no weights are changed
+		•	Infrastructure grew least after ChatGPT because core needs don't change regardless of what's built on top
+		•	New AI engineering workflow: Product → Data → Model (flipped from traditional ML)
+
+Section 5 - AI Engineering vs ML Engineering vs Full-Stack
+		•	Three differences from ML engineering: build vs adapt, compute scale pressure, open-ended outputs
+		•	Two adaptation categories: prompt-based (no weight changes) and finetuning (weight changes)
+		•	Always start with prompt engineering, move to finetuning only when prompt engineering hits its ceiling
+
+Concepts to revisit in later chapters:
+		•	Embeddings (Chapter 2)
+		•	Evaluation methods (Chapter 3)
+		•	Prompt engineering in depth (Chapter 5)
+		•	Context construction (Chapter 6)
+		•	Agents (Chapter 6)
+		•	Finetuning techniques (Chapter 7)
+		•	Dataset engineering (Chapter 8)
+		•	Inference optimization - quantization, distillation, parallelism (Chapters 7-9)
+
